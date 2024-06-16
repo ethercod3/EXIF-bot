@@ -12,6 +12,7 @@ aiogram = "^3.7.0"
 sqlalchemy = "^2.0.30"
 asyncpg = "^0.29.0"
 python-dotenv = "^1.0.1"
+ruff = "^0.4.9"
 
 
 [build-system]
