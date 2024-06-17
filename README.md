@@ -31,8 +31,8 @@ touch .env
 4. Edit your config
 
 ```
-BOT_TOKEN=your token
-SAVE_TO=directory for user uploads
+BOT_TOKEN=your_token
+SAVE_TO=directory_for_user_uploads
 ```
 
 5. Start bot 
