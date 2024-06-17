@@ -6,10 +6,13 @@ greet_reply = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="View image metadata", callback_data="callback_user_metadata_view"
-            ),
+            )
+        ],
+        [
             InlineKeyboardButton(
                 text="Delete image metadata", callback_data="callback_user_metadata_delete"
             )
         ]
     ]
 )
+
