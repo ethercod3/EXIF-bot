@@ -7,12 +7,10 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-pyexif = "^1.0.0"
 aiogram = "^3.7.0"
-sqlalchemy = "^2.0.30"
-asyncpg = "^0.29.0"
 python-dotenv = "^1.0.1"
 ruff = "^0.4.9"
+exif = "^1.6.0"
 
 
 [build-system]
