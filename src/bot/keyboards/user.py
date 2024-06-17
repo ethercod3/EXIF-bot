@@ -10,9 +10,9 @@ greet_reply = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(
-                text="Delete image metadata", callback_data="callback_user_metadata_delete"
+                text="Delete image metadata",
+                callback_data="callback_user_metadata_delete",
             )
-        ]
+        ],
     ]
 )
-
