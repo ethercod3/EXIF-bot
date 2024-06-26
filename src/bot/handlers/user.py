@@ -9,7 +9,7 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import CallbackQuery, Message
 from exif_data import clear_metadata, get_exif
 from keyboards import greet_reply
-from options import ActionEnum
+from options import ActionEnum, VirtualEnv
 from text import greet_message, photo_message
 from utils import bot
 
@@ -36,7 +36,7 @@ async def photo(msg: Message):
 async def doc(msg: Message, state: FSMContext):
     action = await state.get_data()
 
-    save_file_to = join(getenv("SAVE_TO"), msg.document.file_name)
+    save_file_to = join(getenv(VirtualEnv.save_file_to), msg.document.file_name)
 
     with open(save_file_to, "wb") as _:
         ...

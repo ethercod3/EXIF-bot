@@ -6,6 +6,8 @@ import exif
 from aiogram.types import FSInputFile
 from dotenv import load_dotenv
 
+from options import VirtualEnv
+
 load_dotenv()
 
 
@@ -46,7 +48,7 @@ def clear_metadata(path, filename) -> FSInputFile:
 
     img.delete_all()
 
-    clear_path = join(getenv("SAVE_TO"), f"cleared_{filename}")
+    clear_path = join(getenv(VirtualEnv.save_file_to), f"cleared_{filename}")
 
     with open(clear_path, "wb") as clear:
         clear.write(img.get_file())
