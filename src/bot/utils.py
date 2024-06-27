@@ -5,4 +5,6 @@ from options import VirtualEnv
 
 load_dotenv()
 
-bot = Bot(getenv(VirtualEnv.bot_token))
+token = VirtualEnv.bot_token
+
+bot = Bot(getenv(token))
